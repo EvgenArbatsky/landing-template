@@ -1,0 +1,649 @@
+/*
+============================
+Общие стили
+============================*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* 400,500,700 */
+  color: #1A202C;
+  text-transform: capitalize;
+  overflow-x: hidden;
+}
+
+.container-1280 {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-800 {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+============================
+Подсветить границы
+============================*/
+
+/*
+* {
+  outline: 1px black solid;
+}
+*/
+
+/*
+============================
+Стили типографики
+============================*/
+
+.txt-header {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.txt-subheader {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.txt-paragraph {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.txt-paragraph-mini {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.txt-link {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1A202C;
+  text-decoration: none;
+}
+
+.txt-cost__num {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.txt-cost__symbol {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+/*
+============================
+Стили кнопок
+============================*/
+
+.button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 28px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 999px;
+  border: none;
+}
+
+.button_action {
+  color: white;
+  background: linear-gradient(45deg, #0067F4, #2BDBDC);
+}
+
+.button_second {
+  color: #3182CE;
+  background-color: white;
+}
+
+.button_blue {
+  color: white;
+  background-color: #3182CE;
+}
+
+/*
+============================
+Стили инпутов
+============================*/
+
+.input {
+  padding-left: 20px;
+  padding-right: 20px;
+  /*width: 100%;*/
+  height: 50px;
+  border-radius: 4px;
+  border: 0px;
+  outline: 1px solid #D0D8E2;
+}
+
+.textarea {
+  height: 250px;
+  padding-top: 10px;
+}
+
+.input:focus, .input:hover {
+  outline: 1px solid black;
+}
+
+.input_subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 500px;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 999px;
+}
+
+.input_subscribe img {
+  margin-left: 10px;
+}
+
+.input_subscribe input, .input_subscribe input:focus {
+  border: 0;
+  outline: 0;
+}
+
+/*
+============================
+Компоненты
+============================*/
+
+.header-block {
+  width: 600px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header-block p {
+  color: #4A5568;
+}
+
+/*
+============================
+Секции и содержимое
+============================*/
+
+/*
+Секция:
+Cover
+-------------------------------------------*/
+
+.section_cover {
+  background-color: #C5E6F9;
+  width: 100%;
+  height: 740px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.header-menu {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu__nav {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.header-menu__nav a {
+  margin-right: 20px;
+}
+
+.header-menu__nav a:last-child {
+  margin-right: 0px;
+}
+
+.header-menu__nav a:first-child {
+  color: #3182CE;
+}
+
+.header-menu__social-media-icons {
+  display: flex;
+}
+
+.header-menu__social-media-icons a {
+  margin-right: 20px;
+}
+
+.header-menu__social-media-icons a:last-child {
+  margin-right: 0px;
+}
+
+.section_cover__content {
+  margin-top: 147px;
+  text-align: center;
+  justify-content: center;
+}
+
+.section_cover__content h1, .section_cover__content p {
+  margin-bottom: 50px;
+}
+
+.section_cover__content p {
+  color: #4A5568;
+}
+
+.section_cover__buttons button:first-child {
+  margin-right: 40px;
+}
+
+/*
+Секция:
+Crafted-for
+-------------------------------------------*/
+
+.section_crafted-for {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.section_crafted-for p {
+  color: #4A5568;
+}
+
+.section_crafted-for__content__main {
+  margin-top: 30px;
+  width: 800px;
+}
+
+.section_crafted-for__content__main .header-block {
+  text-align: left;
+}
+
+.information-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+}
+
+.information-item {
+  display: flex;
+}
+
+.information-item img {
+  align-self: flex-start;
+}
+
+.information-item__text-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.information-item__text-content h3 {
+  margin-bottom: 7px;
+}
+
+.section_crafted-for__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.section_crafted-for__img-container {
+  width: 420px;
+  height: 460px;
+}
+
+.section_crafted-for__img-container img {
+}
+
+/*
+Секция:
+Our-pricing
+-------------------------------------------*/
+
+.section_our-pricing {
+  background: #ECF1F4;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.section_our-pricing__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-cards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+.price-card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 30px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.price-card {
+
+}
+
+.card1 {
+  background-image: url("assets/decoration/cards/decoration-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 400px 862px;
+}
+
+.card2 {
+  background-image: url("assets/decoration/cards/decoration-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 400px 862px;
+}
+
+.card3 {
+  background-image: url("assets/decoration/cards/decoration-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 400px 862px;
+}
+
+.price-card h3, .price-card .txt-cost__num, .price-card .txt-cost__symbol, .price-card .txt-paragraph {
+  text-align: center;
+}
+
+.price-card ul {
+  width: 100%;
+}
+
+.price-card li {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.price-card li:last-child {
+  margin-bottom: 37px;
+}
+
+.price-card li img {
+  margin-right: 20px;
+}
+
+.price-card h3 {
+  margin-bottom: 38px;
+}
+
+.price-card .txt-paragraph {
+  margin-bottom: 27px;
+}
+
+.price-card__decoration {
+  position: absolute;
+  left: 310px;
+}
+
+/*
+Секция:
+Subscribe
+-------------------------------------------*/
+
+.section_subscribe {
+  display: flex;
+  width: 100%;
+}
+
+.section_subscribe__side_l {
+  width: 100%;
+}
+
+.section_subscribe__side_r {
+  width: 100%;
+  background-color: #3182CE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_subscribe__side_r__container {
+  width: 560px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_subscribe__side_r__container h2 {
+  margin-bottom: 30px;
+}
+
+.section_subscribe__side_r__container p {
+  margin-bottom: 40px;
+}
+
+.section_subscribe__side_l {
+  background-image: url("assets/illustrations/call-to-action.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-color: #AAC6FC;
+}
+
+/*
+Секция:
+Testimonial
+-------------------------------------------*/
+
+.section_testimonial__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  width: 100%;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  padding-bottom: 40px;
+  box-shadow: 0 3px 15px rgba(122,122,122,0.5);
+}
+
+.testimonial-card p {
+  color: #4A5568;
+}
+
+hr {
+  background-color: gray;
+  height: 1px;
+  margin: 0;
+  box-sizing: content-box;
+  display: block;
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+}
+
+.testimonial-card img,
+.testimonial-card p:nth-child(2),
+.testimonial-card hr {
+  margin-bottom: 40px;
+}
+
+/*
+Секция:
+Logos
+-------------------------------------------*/
+
+.section_logos {
+  background-color: #ECF1F4;
+}
+
+.section_logos__container {
+  padding-top: 65px;
+  padding-bottom: 65px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 60px;
+}
+
+/*
+Секция:
+Get-in-touch
+-------------------------------------------*/
+
+.section_get-in-touch__container {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_get-in-touch__container form {
+  display: grid;
+  grid-template-areas:
+  	"input-1 input-2"
+  	"input-3 input-4"
+  	"textarea textarea"
+    "submit submit";
+  gap: 40px;
+  width: 100%;
+}
+
+.get-in-touch__input-1 {
+  grid-area: input-1;
+}
+.get-in-touch__input-2 {
+  grid-area: input-2;
+}
+.get-in-touch__input-3 {
+  grid-area: input-3;
+}
+.get-in-touch__input-4 {
+  grid-area: input-4;
+}
+.get-in-touch__textarea {
+  grid-area: textarea;
+}
+
+.section_get-in-touch__container form input:last-child {
+  grid-area: submit;
+  width: 200px;
+  justify-self: center;
+}
+
+/*
+Секция:
+Footer
+-------------------------------------------*/
+
+.footer {
+  background-color: #ECF1F4;
+}
+
+.footer__container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.footer__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer__head .logo {
+  margin-right: 40px;
+}
+
+.footer__links {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 190px 290px 290px 420px;
+  column-gap: 30px;
+}
+
+.footer__links__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links__col .txt-header_mini {
+  margin-bottom: 28px;
+}
+
+.txt-header_mini {
+  font-size: 14px;
+  color: #4A5568;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__links .txt-paragraph-mini {
+  color: #1A202C;
+  text-decoration: none;
+}
+
+.footer__links li {
+    margin-bottom: 20px;
+}
+
+.footer__links .input_subscribe {
+  width: 420px;
+  margin-bottom: 20px;
+}
+
+.footer__links .input_subscribe input:first-child {
+  padding-left: 20px;
+  width: 100%;
+}
+
+/*
+Секция:
+Copywright
+-------------------------------------------*/
+
+.section_copywright {
+  height: 72px;
+  background-color: #2A4365;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
